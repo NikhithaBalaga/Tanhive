@@ -104,7 +104,7 @@ It is to be set low by the reset. It will go high one cycle after dut_run goes h
 In this project, the weights are fixed for each run. However, multiple input sets will be provided. We kept running the inputs until the size entry in the memory takes on the value FFFF. The first entry will be a valid array size, not FFFF. When dut_run goes high, the needed operations are performed for one or more examples stored in the SRAMs and the outputs are written to the results SRAM. 
 We gave four sets of sample inputs and expected outputs. 
 
-Note: These are stored in the subdirectories input_0 and input_1 respectively. Two more will be given just before the project demo. These are held back so as to prevent us from hard-wiring our code for the provided inputs. The organization of the SRAMs will be so as to contain packed values (two per 16-bit word) in row-major order. 
+Note: These are stored in the subdirectories input_0 and input_1 respectively.The organization of the SRAMs will be so as to contain packed values (two per 16-bit word) in row-major order. 
 
 SRAM ORGANIZATION:
 
