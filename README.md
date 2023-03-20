@@ -43,9 +43,9 @@ To generate a bitstream file from the Verilog RTL code and program it onto the P
 
 •	Open Vivado and create a new project.
 
-•	Add the Verilog RTL code files(conv_fsm.v) to the project.
+•	Add the Verilog RTL code files(conv_fsm.v) & (dut.v) to the project
 
-•	Create a new testbench and add the Verilog testbench files to the project.
+•	Create a new testbench and add the Verilog testbench files(.sv) to the project and the other input files (input_0.yaml ..), run files (input_0.dat ...), makefiles
 
 •	Run the simulation to verify the design.
 
