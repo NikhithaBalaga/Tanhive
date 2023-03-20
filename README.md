@@ -18,6 +18,19 @@ I/O Modules
 SRAM Organization
 
 
+CLONING:
+
+To clone the repository, follow these steps:
+
+Open a terminal or command prompt on your computer.
+
+Navigate to the directory where you'd like to clone the repository.  
+
+Run the following command to clone the repository  :  git clone https://github.com/<username>/<repository-name>.git
+
+Replace <username> with your GitHub username and <repository-name> with the name of the repository.
+
+
 INSTALLATION:
 
 To use this project, you'll need to have Vivado installed on your computer. You can download Vivado from the Xilinx website. You'll also need to have the Pynq-Z1 board and a connection to your computer.
