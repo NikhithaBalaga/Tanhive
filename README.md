@@ -18,6 +18,8 @@ I/O Modules
 SRAM Organization
 
 
+
+
 CLONING:
 
 To clone the repository, follow these steps:
@@ -43,7 +45,7 @@ To generate a bitstream file from the Verilog RTL code and program it onto the P
 
 •	Add the Verilog RTL code files(conv_fsm.v) to the project.
 
-•	Create a new testbench and add the Verilog testbench files(dut.v) to the project.
+•	Create a new testbench and add the Verilog testbench files to the project.
 
 •	Run the simulation to verify the design.
 
@@ -57,7 +59,11 @@ To generate a bitstream file from the Verilog RTL code and program it onto the P
 
 •	Program the bitstream file onto the Pynq-Z1 board using Vivado.
 
-•	For more detailed instructions on using Vivado and programming the Pynq-Z1 board, refer to the Vivado User Guide and the Pynq-Z1 Board User Manual.
+•	For more detailed instructions on using Vivado and programming the Pynq-Z1 board, refer to the Vivado User Guide and the Pynq-Z1 Board User Manual and some useful    links are here:
+
+  https://discuss.pynq.io/t/tutorial-creating-a-hardware-design-for-pynq/145
+  
+  https://discuss.pynq.io/t/tutorial-using-a-new-hardware-design-with-pynq-axi-gpio/146
 
 BUILDING THE PROJECT:
 
@@ -77,8 +83,7 @@ function. We implemented a multiplier and accumulator to implement the CNN funct
 The resulting matrix from this stage will have size (N-2)*(N-2) and have 8-bit entries. 
 We implemented a MaxPooling function based on the max in each 2*2 subarray. The input to the MaxPooling layer will be the output of the convolutional layer. No ReLu is needed. The output from this stage will be an ((N-2)/2)*((N-2)/2) array. 
 
-The accumulator will be 20 bits wide. This (together with control over the weights in training) will ensure that there is no overflow. The result of the ReLu function will be 
-saturated to 8 bits, i.e. Any value greater than 127 will be 127.
+The accumulator will be 20 bits wide. This (together with control over the weights in training) will ensure that there is no overflow. The result of the ReLu function will be saturated to 8 bits, i.e. Any value greater than 127 will be 127.
 
 I/O MODULES:
 
